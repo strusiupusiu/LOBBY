@@ -1,0 +1,94 @@
+{
+  "name": "Powitanie",
+  "temp": "tak",
+  "event-type": "6",
+  "_id": "smwAd",
+  "actions": [
+    {
+      "info": "0",
+      "find": "id kanału na który ma bot wysyłac wiadomość",
+      "storage": "1",
+      "varName": "kanał wlecome",
+      "name": "Find Channel"
+    },
+    {
+      "info": "0",
+      "find": "kanał z regulaminem",
+      "storage": "1",
+      "varName": "rules",
+      "name": "Find Channel"
+    },
+    {
+      "info": "0",
+      "find": "kanał z autorolami mozesz to wyjebac jak chcesz",
+      "storage": "1",
+      "varName": "role",
+      "name": "Find Channel"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "RANDOM",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "nazwa serwera",
+      "name": "Store Server Info"
+    },
+    {
+      "member": "2",
+      "varName": "tak",
+      "info": "1",
+      "storage": "1",
+      "varName2": "member",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "35",
+      "storage": "1",
+      "varName2": "county",
+      "name": "Store Server Info"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Witamy <@${tempVars(\"member\")}> na ***${tempVars(\"nazwa serwera\")}.*** Jesteś naszym ${tempVars(\"county\")} użytkownikiem. Dziękujemy :)\nZapoznaj się z ${tempVars(\"rules\")} i go przestrzegaj a nie wylecisz ze serwera.\nNadaj sobie rangi na ${tempVars(\"role\")}. To tyle od nas. Życzymy miłej zabawy na serwerze!!!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "5",
+      "varName2": "panstwo",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "restriction": "0"
+}
