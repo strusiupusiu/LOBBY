@@ -1,0 +1,80 @@
+{
+  "name": "Żegnaj",
+  "temp": "tak",
+  "event-type": "7",
+  "_id": "iyAzS",
+  "actions": [
+    {
+      "info": "0",
+      "find": "id kanału",
+      "storage": "1",
+      "varName": "panstwo",
+      "name": "Find Channel"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "RANDOM",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "nazwa serwera",
+      "name": "Store Server Info"
+    },
+    {
+      "member": "2",
+      "varName": "tak",
+      "info": "1",
+      "storage": "1",
+      "varName2": "member",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "35",
+      "storage": "1",
+      "varName2": "county",
+      "name": "Store Server Info"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "<@${tempVars(\"member\")}> opuścił pienkny serwer ***${tempVars(\"nazwa serwera\")}.*** Przez tego skurwysyna jest nas już tylko ${tempVars(\"county\")} :(",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "5",
+      "varName2": "panstwo",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "restriction": "0"
+}
